@@ -2,28 +2,23 @@ import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
-       String nama = "Kim Jisoo";
+        String jawapan;
+        int umur = 10;
 
-       // length(). Untuk mendapatkan panjang/ukuran oleh sebuah String.
-        System.out.println("Panjang nama adalah: " + nama.length());
+        if (umur == 10) {
+             jawapan = "Awak adalah sepuluh tahun";
+        } else if (umur == 12) {
+            jawapan = "Awak adalah dua belas tahun";
+        } else if (umur == 14) {
+            jawapan = "Awak adalah empat belas tahun";
+        } else {
+            jawapan = "Saya tidak tahu umur awak";
+        }
 
-        // toUpperCase().
-        System.out.println("Nama jika kita buatkan dia kapital adalah: " + nama.toUpperCase());
+        System.out.println(jawapan);
 
-        // toLowerCase().
-        System.out.println("Nama jika kita buatkan dia tidak kapital adalah: " + nama.toLowerCase());
-
-        // indexOf(). Untuk mencari kedudukan/posisi oleh teks yang dinyatakan.
-        System.out.println("Position Jisoo adalah pada yang ke-" + nama.indexOf("Jisoo"));
-
-        // concat(). Untuk menggabungkan antara banyak-banyak String.
-        String a = "Mr.";
-        String b = "Bean";
-        System.out.println("Gabungan antara a dan b adalah: " + a + b);
-        System.out.println("Gabungan antara a dan b menggunakan concat() adalah: " + a.concat(b));
-
-        // Special characters.
-        String c = "Amir telah cakap \"Hi\".";
-        System.out.println(c);
+        // Ternary
+        jawapan = 5 < 3 ? "Betul, lima adalah lebih daripada tiga" : "Salah, lima adalah lebih daripada tiga";
+        System.out.println("Jawapan daripada Ternary: " + jawapan);
     }
 }
