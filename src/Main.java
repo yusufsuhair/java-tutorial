@@ -1,25 +1,29 @@
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
-        // Arithmetic operators
-        int x = 5;
-        int y = 10;
-        int z = y - x; // Output: 5
+       String nama = "Kim Jisoo";
 
-        // Assignment operators
-        int a = 10;
-        a += 5; // Output: 15
+       // length(). Untuk mendapatkan panjang/ukuran oleh sebuah String.
+        System.out.println("Panjang nama adalah: " + nama.length());
 
-        // Comparison operators
-        boolean adakahLimaLebihDaripadaDua = 5 > 2; // Output: true
-        boolean adakahLimaSamaDenganLima = 5 == 5; // Output: true
-        boolean adakahLimaKurangDaripadaDua = 5 < 2; // Output: false
+        // toUpperCase().
+        System.out.println("Nama jika kita buatkan dia kapital adalah: " + nama.toUpperCase());
 
-        // Logical operators
-        // AND (&&)
-        boolean adakahSepuluhLebihDaripadaTigaDanLimaKurangDaripadaTiga = (10 > 3) && (5 < 3); // Output: False
-        boolean adakahSepuluhLebihDaripadaTigaDanLimaLebihDaripadaTiga = (10 > 3) && (5 > 3); // Output: True
+        // toLowerCase().
+        System.out.println("Nama jika kita buatkan dia tidak kapital adalah: " + nama.toLowerCase());
 
-        // OR (||)
-        boolean adakahSepuluhLebihDaripadaTigaAtauLimaKurangDaripadaTiga = (10 > 3) || (5 < 3); // Output: True
+        // indexOf(). Untuk mencari kedudukan/posisi oleh teks yang dinyatakan.
+        System.out.println("Position Jisoo adalah pada yang ke-" + nama.indexOf("Jisoo"));
+
+        // concat(). Untuk menggabungkan antara banyak-banyak String.
+        String a = "Mr.";
+        String b = "Bean";
+        System.out.println("Gabungan antara a dan b adalah: " + a + b);
+        System.out.println("Gabungan antara a dan b menggunakan concat() adalah: " + a.concat(b));
+
+        // Special characters.
+        String c = "Amir telah cakap \"Hi\".";
+        System.out.println(c);
     }
 }
