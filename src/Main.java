@@ -1,29 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Method Overloading
-        System.out.println(perkenalkanDiri("Amin", 10)); // Integer);
-        System.out.println(perkenalkanDiri("Asyraf", 10.0)); // Double);
-        System.out.println(perkenalkanDiri("Aziz", 9.0f)); // Float);
+        // Method dengan parameter
+        perkenalkanDiri("Najib", 60, "Main facebook", "PUBG", false);
+        perkenalkanDiri("Muhyiddin", 70, "Main facebook", "PUBG", false);
+        perkenalkanDiri("Mahathir", 93, "Main facebook", "PUBG", false);
     }
 
-    static int tambah(int a, int b) {
-        return a + b;
-    }
-
-    static int tambah(int a, double b) {
-        return (int) (a + b);
-    }
-
-    static String perkenalkanDiri(String nama, int umur) {
-        return "Nama saya adalah " + nama + " dan umur saya adalah " + umur;
-    }
-
-    static String perkenalkanDiri(String nama, double umur) {
-        return "Nama saya adalah " + nama + " dan umur saya adalah " + umur;
-    }
-
-    static String perkenalkanDiri(String nama, float umur) {
-        return "Nama saya adalah " + nama + " dan umur saya adalah " + umur;
+    static void perkenalkanDiri(String nama, int umur, String hobi, String gameFeveret, boolean adakahSayaSingle) {
+        System.out.println("Nama saya adalah " + nama + " dan umur saya adalah " + umur);
+        System.out.println("Game feveret saya pula adalah " + gameFeveret);
+        System.out.println("Hobi saya pula adalah " + hobi);
+        System.out.println("Adakah saya single ke tak? " + adakahSayaSingle);
+        System.out.println("\n");
     }
 }
